@@ -3030,6 +3030,8 @@ struct PickMob_t3C819B6694E8A0030C084DD5C555AC7AB7096EC2_StaticFields
 	SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* ___IdSkillsBase;
 	Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* ___IdItemBlockBase;
 	bool ___tanSat;
+	bool ___tanSatBoss;
+	bool ___autoSkill;
 	bool ___tsPlayer;
 	bool ___neSieuQuai;
 	bool ___vuotDiaHinh;

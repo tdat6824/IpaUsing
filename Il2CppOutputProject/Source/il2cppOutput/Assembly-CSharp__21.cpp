@@ -21166,7 +21166,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_checkInput_m9E147107CA7FDACF781124B
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Management_t18DF49189886B6358849438EEA506E32D52C364D_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MyKeyMap_tFE6229A2EB01C6342569291B917107C691ED2D5A_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFC6687DC37346CD2569888E29764F727FAF530E0);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&mGraphics_tFFF36620C2F1ECA6BBC6AC4BCF15E153A4EB5B21_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -21184,9 +21183,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_checkInput_m9E147107CA7FDACF781124B
 	int32_t V_6 = 0;
 	int32_t V_7 = 0;
 	int32_t V_8 = 0;
-	float V_9 = 0.0f;
-	int32_t V_10 = 0;
-	int32_t V_11 = 0;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_9;
+	memset((&V_9), 0, sizeof(V_9));
 	{
 		il2cpp_codegen_runtime_class_init_inline(Management_t18DF49189886B6358849438EEA506E32D52C364D_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((Management_t18DF49189886B6358849438EEA506E32D52C364D_StaticFields*)il2cpp_codegen_static_fields_for(Management_t18DF49189886B6358849438EEA506E32D52C364D_il2cpp_TypeInfo_var))->___tab;
@@ -21421,7 +21419,7 @@ IL_014a:
 		bool L_54 = ((Main_tCF03148AB45B179CD6322FEAA48B616AC04B45B2_StaticFields*)il2cpp_codegen_static_fields_for(Main_tCF03148AB45B179CD6322FEAA48B616AC04B45B2_il2cpp_TypeInfo_var))->___isPC;
 		if (!L_54)
 		{
-			goto IL_01aa;
+			goto IL_0193;
 		}
 	}
 	{
@@ -21433,27 +21431,19 @@ IL_014a:
 		GameCanvas_scrollMouse_mFCB4EE5CCB7F7D2477FF153437706C1944BCCAA1(L_55, il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply(L_56, (10.0f)))), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57;
 		L_57 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
-		float L_58 = L_57.___x;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
-		L_59 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
-		float L_60 = L_59.___y;
-		V_9 = L_60;
-		il2cpp_codegen_runtime_class_init_inline(mGraphics_tFFF36620C2F1ECA6BBC6AC4BCF15E153A4EB5B21_il2cpp_TypeInfo_var);
-		int32_t L_61 = ((mGraphics_tFFF36620C2F1ECA6BBC6AC4BCF15E153A4EB5B21_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_tFFF36620C2F1ECA6BBC6AC4BCF15E153A4EB5B21_il2cpp_TypeInfo_var))->___zoomLevel;
-		V_10 = ((int32_t)(il2cpp_codegen_cast_double_to_int<int32_t>(L_58)/L_61));
-		int32_t L_62;
-		L_62 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
-		float L_63 = V_9;
-		int32_t L_64 = ((mGraphics_tFFF36620C2F1ECA6BBC6AC4BCF15E153A4EB5B21_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_tFFF36620C2F1ECA6BBC6AC4BCF15E153A4EB5B21_il2cpp_TypeInfo_var))->___zoomLevel;
-		V_11 = ((int32_t)(((int32_t)il2cpp_codegen_subtract(L_62, il2cpp_codegen_cast_double_to_int<int32_t>(L_63)))/L_64));
-		GameCanvas_t06E1C9509702A0E619096C516301D54C571414E6* L_65 = ((GameMidlet_tBCA1311E2140C85E2B84A0B5C8019E5A3617CBD9_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tBCA1311E2140C85E2B84A0B5C8019E5A3617CBD9_il2cpp_TypeInfo_var))->___gameCanvas;
-		int32_t L_66 = V_10;
-		int32_t L_67 = V_11;
-		NullCheck(L_65);
-		GameCanvas_pointerMouse_m33E67E2B574E2A8F8E198E94F101DF7EE4F8CD63(L_65, L_66, L_67, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_58;
+		L_58 = Main_ConvertPointerPosition_m01EB4A426B2BDCA17E005835402C839F8946C737(__this, L_57, NULL);
+		V_9 = L_58;
+		GameCanvas_t06E1C9509702A0E619096C516301D54C571414E6* L_59 = ((GameMidlet_tBCA1311E2140C85E2B84A0B5C8019E5A3617CBD9_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tBCA1311E2140C85E2B84A0B5C8019E5A3617CBD9_il2cpp_TypeInfo_var))->___gameCanvas;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_60 = V_9;
+		float L_61 = L_60.___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_62 = V_9;
+		float L_63 = L_62.___y;
+		NullCheck(L_59);
+		GameCanvas_pointerMouse_m33E67E2B574E2A8F8E198E94F101DF7EE4F8CD63(L_59, il2cpp_codegen_cast_double_to_int<int32_t>(L_61), il2cpp_codegen_cast_double_to_int<int32_t>(L_63), NULL);
 	}
 
-IL_01aa:
+IL_0193:
 	{
 		return;
 	}

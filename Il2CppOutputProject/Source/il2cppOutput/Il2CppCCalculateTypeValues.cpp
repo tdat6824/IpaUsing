@@ -8524,12 +8524,12 @@ struct Point_tB5DE1A569E9EF15ADA1620803356ABF9C99DBBF8  : public RuntimeObject
 struct U3CU3Ec_t4C4A333B7F930A92A51E24E34A58465E89FC4DE0  : public RuntimeObject
 {
 };
-struct U3CU3Ec__DisplayClass238_0_t996E039BB75FD3BD914201FB3C4D4221ABC7D3E3  : public RuntimeObject
+struct U3CU3Ec__DisplayClass241_0_t1E05068508E802B653BEEEE9BFBBBAABE1E1342D  : public RuntimeObject
 {
 	Item_tB20A4A826B70B9B7C3F27E69173019EDAD439310* ___itemBuy;
 	int32_t ___num;
 };
-struct U3CLoadFileU3Ed__281_tEE9E08D33C73BC1B4AB3F59B4172D146982B5C2E  : public RuntimeObject
+struct U3CLoadFileU3Ed__284_t535AED4DF166FD1335C6B0E98005F61DA448E319  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -27438,6 +27438,8 @@ struct PickMob_t3C819B6694E8A0030C084DD5C555AC7AB7096EC2_StaticFields
 	SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* ___IdSkillsBase;
 	Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* ___IdItemBlockBase;
 	bool ___tanSat;
+	bool ___tanSatBoss;
+	bool ___autoSkill;
 	bool ___tsPlayer;
 	bool ___neSieuQuai;
 	bool ___vuotDiaHinh;
@@ -27473,6 +27475,7 @@ struct PickMobController_t96B473B08DE1FFCC07440108F9EEBF4A83EA1259_StaticFields
 	int64_t ___TimeWait;
 	List_1_t9E47FED3F44A2301A196084BD5E17686979F8DCC* ___ItemPicks;
 	int32_t ___IndexItemPick;
+	int64_t ___NextPickupAt;
 };
 struct PickMobController_t09CE9998080A6002B4D3C9E829D7D7C7D3FB57E3_StaticFields
 {
@@ -27485,6 +27488,7 @@ struct PickMobController_t09CE9998080A6002B4D3C9E829D7D7C7D3FB57E3_StaticFields
 	int64_t ___TimeWait;
 	List_1_tD696AE7F6774D1A51CDB4BB216507BA67FB7CB40* ___ItemPicks;
 	int32_t ___IndexItemPick;
+	int64_t ___NextPickupAt;
 };
 struct Platform_t4631B21ECD3EEFD9C76686204B6A3AF078DBE03B_StaticFields
 {
@@ -29634,7 +29638,7 @@ struct U3CU3Ec_t907D98881E1A286A3BB155EF393186589F3956A5_StaticFields
 struct U3CU3Ec_t4C4A333B7F930A92A51E24E34A58465E89FC4DE0_StaticFields
 {
 	U3CU3Ec_t4C4A333B7F930A92A51E24E34A58465E89FC4DE0* ___U3CU3E9;
-	Func_2_tBB0D7C02FB04CB15F2B32B7ED20E9B69E87AF505* ___U3CU3E9__219_0;
+	Func_2_tBB0D7C02FB04CB15F2B32B7ED20E9B69E87AF505* ___U3CU3E9__222_0;
 };
 struct U3CU3Ec_tCD479EE36B9C156DD31DCE5074D2D93FE71AD956_StaticFields
 {
@@ -35146,9 +35150,9 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize1594 = { sizeof(Point_tAAB24
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1595;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize1595 = { sizeof(U3CU3Ec_t4C4A333B7F930A92A51E24E34A58465E89FC4DE0), -1, sizeof(U3CU3Ec_t4C4A333B7F930A92A51E24E34A58465E89FC4DE0_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1596;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1596 = { sizeof(U3CU3Ec__DisplayClass238_0_t996E039BB75FD3BD914201FB3C4D4221ABC7D3E3), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1596 = { sizeof(U3CU3Ec__DisplayClass241_0_t1E05068508E802B653BEEEE9BFBBBAABE1E1342D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1597;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize1597 = { sizeof(U3CLoadFileU3Ed__281_tEE9E08D33C73BC1B4AB3F59B4172D146982B5C2E), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize1597 = { sizeof(U3CLoadFileU3Ed__284_t535AED4DF166FD1335C6B0E98005F61DA448E319), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1598;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize1598 = { sizeof(ModFunc_t9F5F3739CB4487FC0CA3CD4293760B7C63FAF097), -1, sizeof(ModFunc_t9F5F3739CB4487FC0CA3CD4293760B7C63FAF097_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1599;
